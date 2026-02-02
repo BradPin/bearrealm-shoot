@@ -1,0 +1,37 @@
+# Godot-specific folders
+# Contains the project cache, local settings, and other generated files
+.godot/
+.import/
+
+# Build / export output
+.export/
+.build/
+export_presets.cfg~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Backup files
+*~
+*.tmp
+*.bak
+*.swp
+
+# VSCode / Cursor settings
+.vscode/
+.history/
+
+# JetBrains IDEs
+.idea/
+
+# Godot Mono (C#) specific
+.mono/
+data_mono/
+
+# Exported builds
+/build/
