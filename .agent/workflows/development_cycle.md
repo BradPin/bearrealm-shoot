@@ -30,9 +30,9 @@ description: Standard workflow for implementing code features in Godot.
 ## 4. Finalize & Commit
 *   **Action**: Only AFTER User approval:
     1.  **Update Issue**: Change status to `DONE`.
-    2.  **Commit**:
+    2.  **Commit**: (Follow `<type>(<scope>): <subject>` format)
         ```bash
         git add .
-        git commit -m "Feat/Fix: [ID] [Description]"
+        git commit -m "feat(gameplay): [ID] implement jump mechanic"
         ```
     3.  **Handover**: Ask User to merge.

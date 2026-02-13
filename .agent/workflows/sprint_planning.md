@@ -30,6 +30,10 @@ User initiates a planning session or provides high-level requirements (e.g., "I 
     - **Description**: Detailed implementation guide.
     - **Acceptance Criteria**: Checklist for completion.
 
-## 4. Confirmation
+## 4. Confirmation & Commit
 *   **Review**: Present the list of created tasks to the User.
+*   **Wait for Approval**: Ask the User if the plan looks correct.
+*   **Commit**: Once approved, commit the new issue cards.
+    *   **Format**: `<type>(<scope>): <subject>` (e.g., `docs(planning): create sprint backlog`)
+    *   **Command**: `git add .agent/issues/`, `git commit -m "docs(planning): add [ID] to [ID] sprint tasks"`
 *   **Prioritize**: Ask the User which task to start first.
