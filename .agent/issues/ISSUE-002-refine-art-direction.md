@@ -1,7 +1,7 @@
 ---
 id: ISSUE-002
 title: Refine Art Direction & Vibe
-status: TODO
+status: DONE
 tags: [design, documentation, art]
 ---
 # Refine Art Direction & Vibe
