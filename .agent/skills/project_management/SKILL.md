@@ -6,54 +6,42 @@ description: Managing project tasks, issues, and git workflow.
 # Project Manager Skill
 
 ## Session Mode: PLANNING
-**TRIGGER**: Activate this skill **ONLY** when the User's message starts with `[planning]`.
+**TRIGGER**: Activate this skill when the User uses `/plan`, `/plan-card`, or `/plan-finish`.
 
-**IF TRIGGERED**:
-1.  Assume the role of **Sprint Planner**.
-2.  Follow the `.agent/workflows/sprint_planning.md` workflow.
-3.  Create necessary Issue Cards in `.agent/issues/`.
+**TASKS**:
+1.  **Plan Logic**: Follow `.agent/workflows/plan.md` to create planning documents in `.agent/plans/`.
+2.  **Card Logic**: Follow `.agent/workflows/plan-card.md` to create issue cards in `.agent/issues/todo/`.
+3.  **Finish Logic**: Follow `.agent/workflows/plan-finish.md` to commit and finalize planning.
 
 ## Role
-You are responsible for maintaining the project's task list and breaking down requirements.
-*   **PROTOCOL**: When acting as a Sprint Planner, you **MUST** follow the workflow defined in `.agent/workflows/sprint_planning.md`.
-*   **MANDATORY**: You must physically CREATE the issue cards in `.agent/issues/` for every identified task. Do not just list them in the chat.
+You are responsible for maintaining the project's task list, architectural plans, and breaking down requirements.
+*   **PROTOCOL**: Always follow the specific workflow associated with the slash command used.
+*   **MANDATORY**: PHYSICALLY create the files (plans and issues) in their respective directories.
 
-## Git Workflow (CRITICAL)
-1.  **Pick an Issue**: Select a task from `.agent/issues/` (or create one).
-2.  **Branch**: Create a new branch for the task.
-    *   Format: `[ID]/[ShortDescription]` (e.g., `ISSUE-001/setup-workspace`)
-    *   Command: `git checkout -b ISSUE-001/setup-workspace`
-3.  **Implement**: Perform the work.
-4.  **Verify**:
-    *   **STOP**: Do not commit yet.
-    *   **Action**: Notify the user to review the changes.
-    *   **Status**: `IN_PROGRESS`.
-5.  **Commit & Close**:
-    *   **AFTER** User approval:
-    *   Update Issue: Mark as `DONE`.
-    *   Commit: `git commit -m "Fix: [ID] ..."`
-    *   Push/Notify Merge: Ask user to merge.
+## Git Workflow
+1.  **Planning Branch**: `PLAN-<ID>/<title>`
+2.  **Commit Standards**: Organize commits by theme. Use `docs(planning): [ID] description`.
 
 ## Issue Management
-*   **Location**: `.agent/issues/`
-*   **Format**: `ISSUE-[ID]-[Description].md`
+*   **Structure**: 
+    - `.agent/issues/todo/`: Upcoming tasks.
+    - `.agent/issues/in_progress/`: Currently active tasks.
+    - `.agent/issues/done/`: Completed tasks.
 *   **Template**:
     ```markdown
     ---
     id: ISSUE-[ID]
     title: [Title]
-    status: [TODO | IN_PROGRESS | DONE]
-    tags: [tag1, tag2]
+    status: [todo | in_progress | done]
     ---
     # [Title]
     
     ## Description
-    [Description]
+    [Detailed technical description]
     
     ## Acceptance Criteria
-    - [ ] [Criteria 1]
+    - [ ] [Criteria]
     ```
 
-## Global Status
-*   **Location**: `docs/project_status.md`
-*   **Update**: Update this file when a major milestone is reached or a significant feature is completed.
+## Project Status
+*   **Update**: Keep `docs/project_status.md` updated with high-level progress.
