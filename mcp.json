@@ -1,0 +1,15 @@
+{
+	"mcpServers": {
+		"godot": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@coding-solo/godot-mcp"
+			],
+			"env": {
+				"GODOT_PATH": "D:/Programs/Godot441/Godot_v4.4.1-stable_win64.exe",
+				"PROJECT_PATH": "D:/workspace/bearrealm-shoot"
+			}
+		}
+	}
+}
