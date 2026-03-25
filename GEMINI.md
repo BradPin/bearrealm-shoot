@@ -10,3 +10,11 @@ Refer to **`.agent/rules.md`** for all:
 
 ### 🎯 Current Mission
 See **`.agent/overview.md`** for current status and focus.
+
+---
+
+### 🌐 Environment Status
+*   **AI Factory (ComfyUI)**: **ALIVE & MANAGED EXTERNALLY**. 
+    *   Target MCP: `bearrealm-ai-factory`
+    *   Instruction: Use MCP tools directly. **NEVER** run `start_comfy.ps1`.
+*   **Godot Engine**: Managed via `godot` MCP. Assume project is open.

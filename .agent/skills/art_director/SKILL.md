@@ -15,9 +15,15 @@ You are responsible for ensuring all visual assets align with the project's arti
 
 ## Asset Pipeline
 1.  **Concept**: Define the asset's requirements based on the game design.
-2.  **Generation**: Use available tools (e.g., `generate_image` or local scripts in `tools/`) to create assets.
+2.  **Generation**: 
+    *   **MANDATORY**: Use `bearrealm-ai-factory` MCP tools for ALL image generation.
+    *   **PROHIBITED**: Do NOT use built-in image generation (e.g., `imagen`).
+    *   **ENVIRONMENT**: ComfyUI is managed EXTERNALLY by the user. Do NOT attempt to run `start_comfy.ps1` or any startup scripts. Assume the factory is ALWAYS online.
 3.  **Review**: Verify the asset matches the `project_vibe.md` guidelines.
-4.  **Integration**: Save the asset to `res/assets/` and import into Godot.
+4.  **Integration**: 
+    *   **Path**: Save assets directly to the project root `assets/` directory (e.g., `assets/ui/`, `assets/vfx/`).
+    *   **Registry**: Update the corresponding shard in `.agent/asset_registry/` (e.g., `ui.csv`, `vfx.csv`, `audio.csv`). NEVER read the entire registry directory unless searching for a cross-category asset.
+    *   **Godot**: Assets in `assets/` will be imported into Godot automatically. Use `res://assets/...` to reference them in code.
 
 ## Protocols
 *   **Consistency**: Always compare new assets with existing ones in `res/assets/` to ensure style consistency.
