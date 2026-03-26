@@ -1,31 +1,24 @@
 ---
 name: Art Director
-description: Managing the artistic direction and asset generation pipeline.
+description: Dispatch hub for art generation and style review.
 ---
 
 # Art Director Skill
 
 ## Role
-You are responsible for ensuring all visual assets align with the project's artistic vision and managing the generation of new assets.
+Ensure all visual assets align with the project's artistic vision.
 
-## Aesthetic Guidelines
-*   **Source of Truth**: `design/vibe.md` (high-level direction) + `.agent/design/vibe/master_art_prompt.md` (generation prompts)
-    *   Consult BOTH files BEFORE generating or selecting any assets.
-    *   Key Pillars: Polished Japanese Fantasy Cartoon, Bear Realm, Elemental Tokens.
+## Quick Rules
+- **MANDATORY**: Use `bearrealm-ai-factory` MCP → `generate_game_asset` for ALL image generation.
+- **PROHIBITED**: Built-in image generation (e.g., `imagen`). Do NOT start ComfyUI.
+- **Output path**: `assets/art/{type}/`, snake_case `.png` filenames.
+- **"Bear"** = stout round-bodied human men (bear community), NOT literal animals.
 
-## Asset Pipeline
-1.  **Concept**: Define the asset's requirements based on the game design.
-2.  **Generation**: 
-    *   **MANDATORY**: Use `bearrealm-ai-factory` MCP tools for ALL image generation.
-    *   **PROHIBITED**: Do NOT use built-in image generation (e.g., `imagen`).
-    *   **ENVIRONMENT**: ComfyUI is managed EXTERNALLY by the user. Do NOT attempt to run `start_comfy.ps1` or any startup scripts. Assume the factory is ALWAYS online.
-3.  **Review**: Verify the asset matches the `project_vibe.md` guidelines.
-4.  **Integration**: 
-    *   **Path**: Save assets directly to the project root `assets/` directory (e.g., `assets/ui/`, `assets/vfx/`).
-    *   **Registry**: Update the corresponding shard in `.agent/asset_registry/` (e.g., `ui.csv`, `vfx.csv`, `audio.csv`). NEVER read the entire registry directory unless searching for a cross-category asset.
-    *   **Godot**: Assets in `assets/` will be imported into Godot automatically. Use `res://assets/...` to reference them in code.
+## On-Demand Sub-docs (read ONLY when needed)
 
-## Protocols
-*   **Consistency**: Always compare new assets with existing ones in `assets/` to ensure style consistency.
-*   **Naming**: Use `snake_case` for all asset filenames.
-*   **Format**: Prefer `.png` for 2D assets.
+| When | Read |
+|------|------|
+| Generating an asset | `.agent/art_references/manifest.md` — available reference images and MCP tool usage |
+| Writing/reviewing prompts | `.agent/design/vibe/master_art_prompt.md` — prompt templates per asset type |
+| Reviewing overall art direction | `design/vibe.md` — high-level style pillars and faction palettes |
+| Updating asset registry | `.agent/asset_registry/{type}.csv` |

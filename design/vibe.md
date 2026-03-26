@@ -2,24 +2,28 @@
 **Source of Truth** for all asset generation and game design.
 
 ## 1. Core Identity
-*   **Theme**: "Bear Realm" (熊域爭鋒) - A polished, fantasy arcade world.
+*   **Theme**: "Bear Realm" (熊域爭鋒) - A polished, fantasy arcade world. "Bear" refers to stout, round-bodied men (bear community aesthetic) — NOT literal animals.
 *   **Tone**: Heroic, Energetic, Whimsical but Serious. Not overly "cartoony" or childish.
 *   **Visual Metaphor**: "Battle Emblems" - Everything should look like a high-quality collectible token or badge.
 
 ## 2. Artistic Direction
-**Style Goal**: **Modern Vector Emblem / High-Fidelity 2D Iconography**.
+**Style Goal**: **Hand-Painted Western Fantasy Game Art** — think Hearthstone / Supercell quality.
 
 ### Visual Pillars
-1.  **Bold Geometry**: Strong silhouettes rooted in basic shapes (Circles, Hexagons, Shields).
-2.  **Clean Vectors**: Crisp lines, no messy sketches. 
-3.  **Vibrant Flat**: Saturated colors with minimal shading (rim lighting or subtle gradients only). NO gritty textures or realistic noise.
-4.  **Stroke**: Consistent bold outlines (Dark Brown `#2A1A10` or Black) to ensure readability against game backgrounds.
+1.  **Hand-Painted Warmth**: Soft painted shading with smooth gradients. Subtle brush texture that feels polished, not rough.
+2.  **Strong Silhouettes**: Bold geometry rooted in basic shapes (Circles, Shields, Stout proportions for characters).
+3.  **Warm Earthy Palette**: Base tones are warm browns, greens, golds. Faction colors are vibrant but grounded in the earthy base.
+4.  **Consistent Outlines**: Medium-weight Dark Brown (`#2A1A10`) outlines. Clean and professional, not sketchy.
+5.  **Rim Lighting**: Subtle highlight edges to make objects pop against any background.
 
 ### Do's & Don'ts
 *   **DO**: Use symmetrical designs for icons/tokens.
-*   **DO**: Use "Rim Lighting" to make objects pop.
-*   **DON'T**: Use pixel art (we are Vector/HD).
+*   **DO**: Use painted gradients for shading (NOT flat cel-shading).
+*   **DO**: Keep characters stout/chubby with cozy proportions.
+*   **DO**: Use stone-medallion format for all elemental icons.
+*   **DON'T**: Use pixel art, anime/manga cel-shading, or flat vector.
 *   **DON'T**: Use realistic photography or noisy 3D renders.
+*   **DON'T**: Use harsh black outlines or sketchy linework.
 
 ## 3. Elemental Factions & Palette
 Specific hex codes for consistency.

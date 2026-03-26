@@ -1,28 +1,38 @@
 {
-  "mcpServers": {
-    "godot": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@coding-solo/godot-mcp"
-      ],
-      "env": {
-        "GODOT_PATH": "D:/Programs/Godot441/Godot_v4.4.1-stable_win64.exe",
-        "PROJECT_PATH": "D:/workspace/bearrealm-shoot"
-      }
-    },
-    "bearrealm-ai-factory": {
-      "command": "uv",
-      "args": [
-        "--directory",
-        "D:/workspace/bearrealm-ai-factory",
-        "run",
-        "python",
-        "mcp_server.py"
-      ],
-      "env": {
-        "PYTHONUNBUFFERED": "1"
-      }
-    }
-  }
+	"mcpServers": {
+		"godot": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@coding-solo/godot-mcp"
+			],
+			"env": {
+				"GODOT_PATH": "D:/Programs/Godot441/Godot_v4.4.1-stable_win64.exe",
+				"PROJECT_PATH": "D:/workspace/bearrealm-shoot"
+			}
+		},
+		"bearrealm-ai-factory": {
+			"command": "uv",
+			"args": [
+				"--directory",
+				"D:/workspace/bearrealm-ai-factory",
+				"run",
+				"python",
+				"mcp_server.py"
+			],
+			"env": {
+				"PYTHONUNBUFFERED": "1"
+			}
+		},
+		"elevenlabs": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"elevenlabs-mcp-enhanced"
+			],
+			"env": {
+				"ELEVENLABS_API_KEY": "XXX"
+			}
+		}
+	}
 }
