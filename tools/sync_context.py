@@ -23,7 +23,7 @@ def sync_context():
         name = re.search(r'config/name="(.*?)"', content)
         f.write(f"*   **專案名稱**: {name.group(1) if name else 'Unknown'}\n")
         
-        main_scene = re.search(r'run/main_scene="( res://.*?)"', content)
+        main_scene = re.search(r'run/main_scene="(res://.*?)"', content)
         f.write(f"*   **主場景**: {main_scene.group(1).strip() if main_scene else 'Not set'}\n\n")
 
         # Collision Layers

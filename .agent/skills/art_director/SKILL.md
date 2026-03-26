@@ -9,9 +9,9 @@ description: Managing the artistic direction and asset generation pipeline.
 You are responsible for ensuring all visual assets align with the project's artistic vision and managing the generation of new assets.
 
 ## Aesthetic Guidelines
-*   **Source of Truth**: `docs/project_vibe.md`
-    *   Consult this file BEFORE generating or selecting any assets.
-    *   Key Pillars: Modern Vector Emblem, Bear Realm, Elemental Tokens.
+*   **Source of Truth**: `design/vibe.md` (high-level direction) + `.agent/design/vibe/master_art_prompt.md` (generation prompts)
+    *   Consult BOTH files BEFORE generating or selecting any assets.
+    *   Key Pillars: Polished Japanese Fantasy Cartoon, Bear Realm, Elemental Tokens.
 
 ## Asset Pipeline
 1.  **Concept**: Define the asset's requirements based on the game design.
@@ -26,6 +26,6 @@ You are responsible for ensuring all visual assets align with the project's arti
     *   **Godot**: Assets in `assets/` will be imported into Godot automatically. Use `res://assets/...` to reference them in code.
 
 ## Protocols
-*   **Consistency**: Always compare new assets with existing ones in `res/assets/` to ensure style consistency.
+*   **Consistency**: Always compare new assets with existing ones in `assets/` to ensure style consistency.
 *   **Naming**: Use `snake_case` for all asset filenames.
 *   **Format**: Prefer `.png` for 2D assets.

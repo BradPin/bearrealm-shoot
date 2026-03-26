@@ -3,9 +3,10 @@
 A 2D Shooter game built with Godot 4.4.1.
 
 ## Structure
-- `.agent/`: Agent workflows, skills, and issue tracking.
-- `docs/`: Project documentation and artistic guidelines.
-- `res/`: Godot project resources (assets, scenes, scripts).
+- `.agent/`: Agent workflows, skills, issue tracking, and core rules (SSOT).
+- `design/`: Game design documents, world-building, and artistic vibe guidelines.
+- `scenes/`: Godot scene files (`.tscn`).
+- `assets/`: Game assets (sprites, audio, UI elements) — auto-imported by Godot.
 - `tools/`: Python utilities for asset processing and automation.
 
 ## Setup

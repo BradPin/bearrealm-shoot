@@ -1,0 +1,16 @@
+---
+description: GDScript coding standards — loaded when editing .gd files.
+globs: "**/*.gd"
+---
+
+# GDScript Standards (Godot 4.4+)
+
+- **Typed everything**: `var velocity: Vector2 = Vector2.ZERO`, `func foo(x: int) -> void:`
+- **Signals**: `target.signal_name.connect(callable)` (Godot 4 syntax)
+- **Naming**: `snake_case` files/vars, `PascalCase` classes, `_prefix` private
+- **class_name**: Define on ALL custom scripts for type-safe references
+- **@export**: Group with `@export_group("GroupName")` for Inspector clarity
+- **Collision**: Reference `.agent/godot_index.md` for layer IDs — no hardcoding
+
+For physics tasks, drill-down to `.agent/skills/developer/physics/SKILL.md`.
+Full standards: `.agent/guidelines.md`.

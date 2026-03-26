@@ -1,0 +1,20 @@
+---
+description: Asset generation pipeline — loaded when working with image/audio assets.
+globs: "assets/**"
+---
+
+# Asset Pipeline Rules
+
+## Before Generating ANY Asset
+1. Read `.agent/design/vibe/master_art_prompt.md` (images) or `master_audio_prompt.md` (audio).
+2. Follow the full SOP: `.agent/workflows/create_asset.md`.
+
+## MCP Usage
+- **Images**: Use `bearrealm-ai-factory` MCP → `generate_game_asset` tool.
+- **PROHIBITED**: Do NOT use built-in image generation.
+- **ComfyUI**: Managed externally — NEVER run `start_comfy.ps1`.
+
+## Post-Generation
+- Process images: `python tools/asset_processor.py <path>`.
+- Register: Append to `.agent/asset_registry/art.csv` or `audio.csv`.
+- Integration: Read `.agent/skills/systems_architect/SKILL.md` for Godot mounting.

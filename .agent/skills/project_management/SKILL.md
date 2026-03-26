@@ -5,13 +5,16 @@ description: Managing project tasks, issues, and git workflow.
 
 # Project Manager Skill
 
-## Session Mode: PLANNING
-**TRIGGER**: Activate this skill when the User uses `/plan`, `/plan-card`, or `/plan-finish`.
+## Workflow Triggers
+**TRIGGER**: Activate this skill when the User uses any of these workflow commands:
 
-**TASKS**:
-1.  **Plan Logic**: Follow `.agent/workflows/plan.md` to create planning documents in `.agent/plans/`.
-2.  **Card Logic**: Follow `.agent/workflows/plan-card.md` to create issue cards in `.agent/issues/todo/`.
-3.  **Finish Logic**: Follow `.agent/workflows/plan-finish.md` to commit and finalize planning.
+| 指令 | Workflow | 動作 |
+|------|----------|------|
+| `/plan <input>` | `workflows/plan.md` | 討論需求、產出 PLAN 文件 |
+| `/plan-card [source]` | `workflows/plan-card.md` | 從 PLAN 或設計文件拆出 ISSUE 卡 |
+| `/feature-start ISSUE-N` | `workflows/feature-start.md` | 建分支、搬卡、調度 Skill 實作 |
+| `/feature-valid` | `workflows/feature-valid.md` | 驗證實作結果 |
+| `/finish` | `workflows/finish.md` | 收尾當前階段 (auto-detect context) |
 
 ## Role
 You are responsible for maintaining the project's task list, architectural plans, and breaking down requirements.
@@ -44,4 +47,4 @@ You are responsible for maintaining the project's task list, architectural plans
     ```
 
 ## Project Status
-*   **Update**: Keep `docs/project_status.md` updated with high-level progress.
+*   **Update**: Keep `.agent/overview.md` updated with high-level progress and current focus.

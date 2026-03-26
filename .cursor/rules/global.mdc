@@ -1,0 +1,36 @@
+---
+description: Global SSOT entry point — loaded for every interaction.
+globs:
+alwaysApply: true
+---
+
+# Bearrealm Shoot — Agent Entry
+
+**SSOT**: `.agent/rules.md` — ALL behavioral, technical, and architectural rules.
+**Status**: `.agent/overview.md` — Current milestone and focus.
+**Protocol**: `.agent/protocols/inter_agent.md` — Human-in-the-Loop collaboration.
+
+## Producer Control (最重要原則)
+User 是 Producer。完成任何重大階段後，**停下報告，等 User 指示**。不可自行推進。
+
+## Folder Philosophy
+- `design/` = **User 的創意輸入** (唯讀參考，Godot Ignored)
+- `assets/` = **Agent 的成品輸出** (Godot Auto-import)
+- `.agent/` = **Agent 的工作腦** (Godot Ignored)
+
+## Skill Dispatch (按需讀取，不預先載入)
+- Planning/Tasks → `.agent/skills/project_management/SKILL.md`
+- Game Design → `.agent/skills/game_designer/SKILL.md`
+- Art Generation → `.agent/skills/art_director/SKILL.md`
+- Audio → `.agent/skills/audio_designer/SKILL.md`
+- VFX / Particles → `.agent/skills/vfx_artist/SKILL.md`
+- Godot Assembly → `.agent/skills/systems_architect/SKILL.md`
+- Coding / Physics → `.agent/skills/developer/SKILL.md`
+- Animation → `.agent/skills/animator/SKILL.md`
+- UI/UX → `.agent/skills/ui_designer/SKILL.md`
+- Context Audit → `.agent/skills/context_reviewer/SKILL.md`
+
+## Token Rules
+- Lazy-load: NEVER read skill files unless the task requires that skill.
+- Tool-first: Use `godot` MCP tools before reading raw `.tscn`/`.tres`.
+- On-demand: Only read `design/` docs when actively implementing that content.

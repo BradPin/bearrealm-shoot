@@ -1,0 +1,11 @@
+---
+description: Scene editing rules — loaded when working with Godot scene files.
+globs: "**/*.tscn"
+---
+
+# Scene Editing Rules
+
+- **NEVER** read raw `.tscn` for structural understanding — use `godot` MCP tools.
+- Use `godot:create_scene`, `godot:add_node`, `godot:load_sprite`, `godot:save_scene`.
+- After modifying `project.godot`, run `python tools/sync_context.py`.
+- For scene architecture guidance, read `.agent/skills/systems_architect/SKILL.md`.

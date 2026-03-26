@@ -14,8 +14,10 @@
 
 ## 🤖 Agent Instructions (CRITICAL)
 1.  **Strict Typing**: 所有 GDScript 必須標註類型。
-2.  **Doc Reference**: 代碼風格參考 `docs/godot_guidelines.md`，專案層級參考 `docs/godot_context.md`。
-3.  **Design Flow**: 讀取 `design/raw/` 的企劃後，主動在 `design/` 生成結構化文件。
+2.  **Doc Reference**: 代碼風格參考 `.agent/guidelines.md`，Godot 設定參考 `.agent/godot_index.md`。
+3.  **Design Flow**: 讀取 `design/game/` 的企劃後，主動在 `design/` 生成結構化文件。
+4.  **Skill Dispatch**: 參照 `.agent/rules.md` 的 Skill Dispatcher 進行角色路由。
+5.  **Collaboration**: 多步驟任務遵循 `.agent/protocols/inter_agent.md` 的協作流。
 
 ## 待辦核心任務
 - [ ] ISSUE-003: 核心彈射物理 (Current Focus)。
