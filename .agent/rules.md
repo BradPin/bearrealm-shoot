@@ -8,6 +8,7 @@
 *   **Lazy Loading**: NEVER read raw `.tscn`, `.tres`, or large binary/text files unless specifically instructed.
 *   **Tool-First Discovery**: ALWAYS use `godot` MCP tools to understand scene structure.
 *   **On-Demand Reference**: Only read `design/` docs when actively implementing that content.
+*   **Glossary-First**: When reading ANY file under `design/game/`, read `design/game/glossary.md` FIRST to align on terminology. This prevents misinterpretation of game-specific terms (e.g. 戰役 ≠ 戰鬥).
 *   **Skill Lazy-Load**: Only read a `SKILL.md` when the current task requires that skill's domain.
 *   **Index Usage**: Use `.agent/godot_index.md` for project settings, layers, and input maps.
 
