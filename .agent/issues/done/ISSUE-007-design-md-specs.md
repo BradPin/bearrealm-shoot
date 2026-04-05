@@ -1,7 +1,7 @@
 ---
 id: ISSUE-007
 title: "[Planning] 企劃說明文件（純 Markdown）架構與維護"
-status: todo
+status: done
 source: design/game/mvp.md 第 8 節（Producer 文件清單）+ User plan-card 需求
 primary_skill: game_designer
 tags: [planning, design-docs, markdown]
@@ -27,10 +27,10 @@ tags: [planning, design-docs, markdown]
 
 ## Acceptance Criteria
 
-- [ ] 文件中有明確的 **目錄／命名慣例**（純 MD 類）與 **何時更新 `context_index.md`** 的規則。
-- [ ] 至少一份 **可複製的模板或檢查清單**（適用於系統說明或新開 `system/*.md`）。
-- [ ] `mvp.md` P0 文字企劃項與實際檔案路徑 **對照表或註記**（缺檔則標「待建」），避免 Agent 猜路徑。
-- [ ] 說明如何與 **ISSUE-013**（schema）／**ISSUE-014**（資料內容）**分工**，不重複定義同一規則。
+- [x] 文件中有明確的 **目錄／命名慣例**（純 MD 類）與 **何時更新 `context_index.md`** 的規則。
+- [x] 至少一份 **可複製的模板或檢查清單**（適用於系統說明或新開 `system/*.md`）。
+- [x] `mvp.md` P0 文字企劃項與實際檔案路徑 **對照表或註記**（缺檔則標「待建」），避免 Agent 猜路徑。
+- [x] 說明如何與 **ISSUE-013**（schema）／**ISSUE-014**（資料內容）**分工**，不重複定義同一規則。
 
 ## Notes
 
