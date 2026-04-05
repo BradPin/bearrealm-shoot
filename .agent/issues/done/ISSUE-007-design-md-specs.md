@@ -36,3 +36,4 @@ tags: [planning, design-docs, markdown]
 
 - 本卡 **不** 決定 CSV／SQLite／JSON；僅約定 Markdown 層如何指向「正式資料定義」。
 - **ISSUE-003～005**（核心工程）可與企劃向 ISSUE **並行**。
+- **ISSUE-008 起**（企劃／Producer 與 013／014 規劃向）：各卡頂部 **「Agent 協作模式（硬性）」** 為 Agent 行為準則；並與 `.agent/skills/game_designer/SKILL.md` 之 **Producer 主筆模式** 一致（問答與缺口盤點為主，禁止未委託即代寫定稿）。

@@ -9,6 +9,14 @@ tags: [producer, combat, mvp1]
 
 # [Producer] combat.md：MVP1 可實作戰鬥規格
 
+## Agent 協作模式（硬性）
+
+- **擁有者**：本 ISSUE 對應之 `design/game/` 檔案，**規則與敘述由 Producer 定稿**。
+- **Agent 應做**：以 **問答、核對、缺口盤點** 為主——對照 `design/game/mvp.md` 與下方 Acceptance Criteria，指出 **不足以實作**、**歧義**、與 glossary／他檔 **潛在衝突**；輸出 **待 Producer 回答的具體問題**；可建議 **小節標題或檢核表**，但 **不代替 Producer 寫滿規格內文**。
+- **禁止**：未經 Producer **明示委託**（例如「幫我起草我再改」），即 **代寫或覆寫整份企劃**、或將自行推論當成定案寫入 `design/`。
+- **實作標準**：定稿後應達到 **Developer 無需臆測玩法**；不足處應標 `[待 Producer 定]` 或留在對話追問，**不可腦補定案**。
+- **例外**：Producer 明確要求草稿時，產出須標 **草稿／待 Producer 審**。
+
 ## Description
 
 將 `design/game/system/combat.md` 擴寫至 MVP1 所需深度，使程式可依此文實作與測試，無需猜規則。

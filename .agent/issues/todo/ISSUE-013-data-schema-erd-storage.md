@@ -9,6 +9,14 @@ tags: [planning, schema, erd, data-model]
 
 # [Planning] Schema／ERD 設計與儲存載體評選
 
+## Agent 協作模式（硬性）
+
+- **擁有者**：**欄位語意、實體與玩法之對應、哪些規則進資料層** 由 **Producer 確認**；Agent 不得將自行推論的玩法寫成定案。
+- **Agent 應做**：在 Producer 已提供之 `system/*.md` 語意基礎上，以 **問答與核對** 協助 **ERD 結構、儲存載體比較（CSV／SQLite／JSON）、與 `level.md`／`relic-weave` 對齊**；標出 **缺欄位、無法驗證、與 MVP1 不一致** 處，並列出 **待 Producer 裁定的選項**。
+- **禁止**：未經 Producer **明示委託** 即代寫整份 schema 規格書並當作最終版；亦不可代替 Producer 撰寫 **`design/game/system/` 內規則正文**（該部分屬對應 Producer ISSUE）。
+- **實作標準**：定稿後應讓 **Developer 可依資料載入而不猜玩法**；不確定處標 `[待 Producer 定]`。
+- **例外**：Producer 明確要求草稿時，產出須標 **草稿／待 Producer 審**。
+
 ## Description
 
 將遊戲 **可資料化** 的內容（關卡、勝負條件、遺物鏈、彈珠屬性、敵方行為模板等）收斂為 **Schema／ERD 層級** 的規格，並 **評選 MVP1 與後續擴充適用的儲存與編修載體**。
