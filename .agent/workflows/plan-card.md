@@ -27,6 +27,9 @@ User invokes `/plan-card [source]`.
     source: [PLAN-ID or design file path]
     ---
     # [Title]
+
+    ## Agent 協作模式（硬性）
+    若本卡產出物為 User（Producer）擁有之 `design/game/` 企劃：見既有 ISSUE-008～018 節錄；**Agent 預設問答與缺口盤點，禁止未委託即代寫定稿**。013／014 類管線卡可改用「語意由 Producer 確認」變體。
     
     ## Description
     [Detailed technical description]
