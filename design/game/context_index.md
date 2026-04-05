@@ -9,6 +9,8 @@
 
 1. `design/game/glossary.md`  
    - 統一術語對照表。**閱讀任何 `design/game/` 文件前，先讀它。**
+2. `design/game/mvp.md`  
+   - **MVP1 範圍**（遊玩模式、In/Out、遺物過渡策略、驗收與 Producer 文件清單）。實作或收斂需求時優先對齊。
 
 ---
 
